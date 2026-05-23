@@ -8,3 +8,4 @@ mask-dataset-bucket/
 model_mask_covid/
 *.jsonl
 notebook_template*
+*.json
