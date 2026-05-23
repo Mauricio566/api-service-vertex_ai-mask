@@ -4,3 +4,7 @@ __pycache__/
 .ipynb_checkpoints/
 .*
 !.gitignore
+mask-dataset-bucket/
+model_mask_covid/
+*.jsonl
+notebook_template*
