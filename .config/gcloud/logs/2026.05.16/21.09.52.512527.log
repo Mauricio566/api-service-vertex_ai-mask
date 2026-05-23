@@ -1,0 +1,43 @@
+2026-05-16 21:09:52,514 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-05-16 21:09:52,625 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2026-05-16 21:09:52,628 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json", --min-expiry: "1800"]
+2026-05-16 21:09:52,628 DEBUG    root            On GCE from disk cache: True
+2026-05-16 21:09:52,670 DEBUG    root            On GCE from memory cache: True
+2026-05-16 21:09:52,698 DEBUG    root            On GCE from memory cache: True
+2026-05-16 21:09:52,723 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/511076842936-compute@developer.gserviceaccount.com/?recursive=true
+2026-05-16 21:09:52,731 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2026-05-16 21:09:52,733 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/511076842936-compute@developer.gserviceaccount.com/?recursive=true HTTP/1.1" 200 155
+2026-05-16 21:09:52,737 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/511076842936-compute@developer.gserviceaccount.com/token
+2026-05-16 21:09:52,739 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/511076842936-compute@developer.gserviceaccount.com/token HTTP/1.1" 200 873
+2026-05-16 21:09:52,770 DEBUG    root            Chosen display Format:default json
+2026-05-16 21:09:52,771 INFO     root            Display format: "default json"
+2026-05-16 21:09:52,834 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "compute": {
+        "region": "us-central1"
+      },
+      "core": {
+        "account": "511076842936-compute@developer.gserviceaccount.com",
+        "disable_usage_reporting": "True",
+        "project": "project-a5d39078-68b8-4a9c-a89",
+        "universe_domain": "googleapis.com"
+      },
+      "dataproc": {
+        "region": "us-central1"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.c.c0AZ4bNpavHIpe8Y8qnLtYdTHXbYoGWTGDZv11DoUNKNnIPiJzm_YcFVnjykhIP-KHq09RxRiyv4cKE_vtBFkiAN-WumzsE_Ax_SQST5ZZ3EU-VDiqHDx60GccnTE4DxMfJyTAYxCXmChBW-tlogddiezCTc7OYHN0il2dBzY_Sp8CwMNqS5GgnFacxcuDc754bT0-LmSA0bBOtDLEhB4cozfVnSoXZHFYdZC_EvkoCXmxvt3mC5ZQK-5w9ed1X0VXTkoK2lai5BAKtjYUIVcM3Thg7LYjKI8WhezPWb9yHkyBWRBfT4R2Rk2Jyb5_44LtOBpM98rW_NR7-eNjgNOds4_3fQCZSW3IK2bI55YC0DicHw-xxtW78EJj1ObXdArFYIjNcCCHhQe0caXQSb-OqgH415K2gBeXnhzX1qkhikgzqY7yiyX8sBkVZavOVkumoWs6pFRvznlB8JaB-ukIQhx1JdvqtaZduquw4qVfezF598fkIR2euBwpBjFiid-jkmQ-OamBxko6U1ctFXVVjSiYl_eXd3xv9RjlhZvUMuaUO3XufSxqm-yz-5VgbspnOdpo5FMysu3iM9UWuUqU4RBchj-Jf01_jkoeh6bmmc5auUktO43OhWhF0WYoIBpb2-0Rsl6y1WcRv2SdqdvonvyY5umggwfzds0tvtJuBj2h8dMW8-FR7I9IeO8udY52vz2J5l8_6IVrggth_6nn56-86MveOZOInl_fmq3hm7U20zFpfjgBBe1-limBvpYOzxnVX1i966pR_O6iv-5gkllFrIZ7Z0dJbO510JawuBionbInngko8pOqMhwp8Vo8sy53ZqZ0ubuxYsYBIaovqldQ-nxrBWRl6QfOIg2InSZqgd8V_Yb105RXO96J92ZbekWqVw89hJdoUmwm-qfVom1RWFfjSorlUg-ruU3_ptd97pVmVbnYBS3Yij5aapSFk4UWgUo-kmM8ZtrsVM_gdilcQnepFnBM-10tY0oFkoapn4Sztl8Ukxi",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImY4ZTY2MjBkMzk3MTFhYTIxY2U4YTJiZjJmM2VlMDFiOTI0Y2IyZDAiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF6cCI6IjEwOTM2NDkyNzM1Mjg0NzY2NDA0OSIsImV4cCI6MTc3ODk2OTM5MiwiaWF0IjoxNzc4OTY1NzkyLCJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJzdWIiOiIxMDkzNjQ5MjczNTI4NDc2NjQwNDkifQ.n3gbeqwmKR5p8oybNDKYRDAyLPkTb6ZGXgnf_Gb2iY-8MY486eKt1g4A7lETczqoHGG4HzFPrPUXKSYHBaq-8Hc0BFGdN_QEbzbpphRwTQfI6VwkF4MOQt3m0ph_7OpoDpKE-v6tMbH4K0BRzJ_p-T2EbV-FppsDSa5Pa02YiIEVaKBbpZeIBKAtlxeNQQIQno8PQ2O_2037hh8EDiULl5j_5dkLXHReZuaedcRWjfqTAG7t7JjDfwj6-e-Vj61osBxHxl4vKtXIHbjp0gx8PFtWf6uSF_TPAjrvcB6SiarvB73NNLF8p4RcVOdZm6zsAuU_hL5pjqq8QfwE2hIUXg",
+    "token_expiry": "2026-05-16T22:07:58Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/home/jupyter/.config/gcloud/config_sentinel"
+  }
+}
+2026-05-16 21:09:52,834 INFO     ___FILE_ONLY___ 
+
+2026-05-16 21:09:52,844 DEBUG    root            SDK update checks are disabled.

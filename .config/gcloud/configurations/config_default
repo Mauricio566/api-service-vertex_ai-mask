@@ -1,0 +1,9 @@
+[compute]
+region = us-central1
+
+[dataproc]
+region = us-central1
+
+[core]
+account = mauricioyorman@gmail.com
+

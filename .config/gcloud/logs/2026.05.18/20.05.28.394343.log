@@ -1,0 +1,50 @@
+2026-05-18 20:05:28,396 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-05-18 20:05:28,419 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2026-05-18 20:05:28,421 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json", --min-expiry: "1800"]
+2026-05-18 20:05:28,425 DEBUG    root            On GCE from server: True
+2026-05-18 20:05:28,434 DEBUG    root            On GCE from memory cache: True
+2026-05-18 20:05:28,445 DEBUG    root            On GCE from memory cache: True
+2026-05-18 20:05:28,459 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/511076842936-compute@developer.gserviceaccount.com/?recursive=true
+2026-05-18 20:05:28,461 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2026-05-18 20:05:28,462 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/511076842936-compute@developer.gserviceaccount.com/?recursive=true HTTP/1.1" 200 155
+2026-05-18 20:05:28,463 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/511076842936-compute@developer.gserviceaccount.com/token
+2026-05-18 20:05:28,464 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/511076842936-compute@developer.gserviceaccount.com/token HTTP/1.1" 200 868
+2026-05-18 20:05:28,493 DEBUG    root            On GCE from memory cache: True
+2026-05-18 20:05:28,496 DEBUG    root            On GCE from memory cache: True
+2026-05-18 20:05:28,498 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/511076842936-compute@developer.gserviceaccount.com/?recursive=true
+2026-05-18 20:05:28,499 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2026-05-18 20:05:28,500 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/511076842936-compute@developer.gserviceaccount.com/?recursive=true HTTP/1.1" 200 155
+2026-05-18 20:05:28,501 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/511076842936-compute@developer.gserviceaccount.com/token?scopes=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform%2Chttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email
+2026-05-18 20:05:28,503 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/511076842936-compute@developer.gserviceaccount.com/token?scopes=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform%2Chttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email HTTP/1.1" 200 868
+2026-05-18 20:05:28,524 DEBUG    root            Chosen display Format:default json
+2026-05-18 20:05:28,524 INFO     root            Display format: "default json"
+2026-05-18 20:05:28,573 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "compute": {
+        "region": "us-central1"
+      },
+      "core": {
+        "account": "511076842936-compute@developer.gserviceaccount.com",
+        "disable_usage_reporting": "True",
+        "project": "project-a5d39078-68b8-4a9c-a89",
+        "universe_domain": "googleapis.com"
+      },
+      "dataproc": {
+        "region": "us-central1"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.c.c0AZ4bNpbnsakVZTqm0PfwcbfmTC2GwwnW42VX-jv9qx7POXZ4x3WVHTSTFWXgFmammMZd9PIesS4HuQ2HdTkZIZcsRDX2U7XdhUpkQQQcIFLguwTgB_KULe9ykjJhnYH9n2CBr6zKJqoSspwtUPT7FbpqQvJEpH2shMInRAtO40265t-MSfhIpTmNpGQ0f-vnS8BpqG2M8Igpoq9TxEAqxpT1kBJNwF1vtELZCLLaCDiozPHRZvj8diXLgcvn7J0NbQwnrxb6JwyHhCtGFfVUIgdEhHhDU68cXLnf6OHuTSb8Fkxo4OFi3i3XyQ9S_lvsJVDcxD9DyoVh45J5o7mbAdaX4me-rfpVAQQviH1q6uZdJ9osT8mlkLDbGWESOqh35byqZF3mec-dtupPO2LmzwN415Da0OowRsJYbS8OqUVelw7-mdX-i_te_QwbWvr18cOwBvVJclpoc6wqxolVjdRufrRiU6fUBQU3Um3WyXMVejyuI3ctyl2X6fF0rsSBuoaiRx8ct841ochV-eutb_0Rp4e00RYY-J_z9wtnvttgMsXZ6Fbenip9os8oJOnRY4a7S4bV_qrplraYpZFkp83F6guhXsjdOvdXvzmUbY_q_p48se81_s8nxm_4M4vX4S8ppQt7BJb3de9d0I9R0iX2vml2Wf64FtqgkyYjp9uU3gVFXJ1U1q29ehijMWWw-R4JgpRc-y2o1kXq-ZuZyns-1IamiOSYZqMSzzFb8eRhie4o_ugciFn3n5xieFmyfI8B7d4hkquFJFXFdWyeX8uXrv3On9Zd7gctRgtBJXf8tql6xxVVB1byyai8Xj0ZgmyIumBsc42YkwRJnu2FtSuZmk_d9qpmSI5_y-dgo2-_fu2ZdsY6UZyQY95tVkreqoJa8zjkfm-_i2pbIuXUvyzvWUv07hiW-nnXI6_IFcR0rpyglVM0Jkuk32enZV62RlBbRyZck90bBdvlrdmllgJoSh2fbzOm4nyxml6bh2yyd3zR1bIcMSe",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImY4ZTY2MjBkMzk3MTFhYTIxY2U4YTJiZjJmM2VlMDFiOTI0Y2IyZDAiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF6cCI6IjEwOTM2NDkyNzM1Mjg0NzY2NDA0OSIsImV4cCI6MTc3OTEzODMyOCwiaWF0IjoxNzc5MTM0NzI4LCJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJzdWIiOiIxMDkzNjQ5MjczNTI4NDc2NjQwNDkifQ.pWWjOEJRS6K1I0sFZNB0HHLcpStN7DyMQ-muzz9db3rHdVkgHdaJJ-7u72M0YF3Z252f5Wm1Ozfrmn17PpLAb-dremV6iMnyNXzx8ZqH6jtYUahErXu7uQZLOrnxUa-VElmwfRcyy-Sg9xboYQkTj_LuroAem-hGuj_tymXqsclEV_CMPPX8QijQudIt5CrUssyXhcpGcpPDuk5q10pQ2kKQCvYbBE1ZpXqgC6HeRhxhFYFOPjUtPRo6IBhVwuB_oL7k0H9sJwMDvgko1GT-9IX5iY3_JG9Z7KMHqaFHhOAzHt_dzZ6oOGGGDvvifCtQn3Ik4R1wF3TGb-8_9CCKBg",
+    "token_expiry": "2026-05-18T20:30:00Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/home/jupyter/.config/gcloud/config_sentinel"
+  }
+}
+2026-05-18 20:05:28,573 INFO     ___FILE_ONLY___ 
+
+2026-05-18 20:05:28,582 DEBUG    root            SDK update checks are disabled.

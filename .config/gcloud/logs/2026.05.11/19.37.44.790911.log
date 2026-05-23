@@ -1,0 +1,20 @@
+2026-05-11 19:37:44,792 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-05-11 19:37:45,070 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2026-05-11 19:37:45,075 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "compute/region", VALUE: "us-central1"]
+2026-05-11 19:37:45,109 DEBUG    root            On GCE from disk cache: True
+2026-05-11 19:37:45,111 DEBUG    root            On GCE from memory cache: True
+2026-05-11 19:37:45,176 DEBUG    root            On GCE from memory cache: True
+2026-05-11 19:37:45,191 DEBUG    root            On GCE from memory cache: True
+2026-05-11 19:37:45,215 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/511076842936-compute@developer.gserviceaccount.com/?recursive=true
+2026-05-11 19:37:45,218 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2026-05-11 19:37:45,220 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/511076842936-compute@developer.gserviceaccount.com/?recursive=true HTTP/1.1" 200 155
+2026-05-11 19:37:45,222 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/511076842936-compute@developer.gserviceaccount.com/token
+2026-05-11 19:37:45,224 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/511076842936-compute@developer.gserviceaccount.com/token HTTP/1.1" 200 868
+2026-05-11 19:37:45,514 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-11 19:37:45,720 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/project-a5d39078-68b8-4a9c-a89/regions/us-central1?alt=json HTTP/1.1" 403 None
+2026-05-11 19:37:45,725 WARNING  root            Property validation for compute/region was skipped.
+2026-05-11 19:37:45,727 INFO     ___FILE_ONLY___ Updated property [compute/region].
+
+2026-05-11 19:37:45,728 DEBUG    root            Chosen display Format:default
+2026-05-11 19:37:45,729 INFO     root            Display format: "default"
+2026-05-11 19:37:45,736 DEBUG    root            SDK update checks are disabled.
