@@ -1,3 +1,0 @@
-/opt/micromamba/envs/ml
-/opt/micromamba/envs/ml2
-/opt/micromamba/envs/ml_inference
