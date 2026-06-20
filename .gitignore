@@ -1,3 +1,25 @@
+# modelos
+*.keras
+*.h5
+*.pb
+
+# datos (carpetas)
+Tapabocas-lujo/
+mal-puesto/
+mala-calidad/
+oclusion/
+sin-tapabocas/
+tapabocas/
+
+# numpy
+*.npy
+
+# python
+__pycache__/
+*.pyc
+
+# notebooks checkpoints
+.ipynb_checkpoints/
 .cache/
 __pycache__/
 *.pyc
@@ -9,3 +31,5 @@ model_mask_covid/
 *.jsonl
 notebook_template*
 *.json
+tapabocas-tendencias/
+Untitled.ipynb

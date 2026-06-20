@@ -1,18 +1,22 @@
 import requests
 import base64
+import os
 
 
-ruta_imagen = "tapabocas2.jpg"
+ruta_imagen = "tapabocas/tapabocas3.jpg"
+
 
 #  
 with open(ruta_imagen, "rb") as image_file:
     # We encoded it to base64 and converted it to text (utf-8)
     img_b64 = base64.b64encode(image_file.read()).decode('utf-8')
+    img_name = os.path.basename(ruta_imagen)
 
 payload = {
     "instances": [
         {
-            "b64": img_b64
+            "b64": img_b64,
+            "name": img_name,
         }
     ]
 }
